@@ -1,0 +1,14 @@
+cloud:
+  aws:
+    region:
+      static: ${AWS_REGION}
+    stack:
+      auto: false
+    credentials:
+      access-key: ${AWS_ACCESS_KEY_ID}
+      secret-key: ${AWS_SECRET_KEY}
+
+aws:
+  queue:
+    endpoint: ${AWS_QUEUE_ENDPOINT}
+    queue-test-sqs: ${AWS_QUEUE_NAME}
