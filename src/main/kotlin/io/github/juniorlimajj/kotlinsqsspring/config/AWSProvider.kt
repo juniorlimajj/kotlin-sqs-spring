@@ -16,7 +16,6 @@ class AWSProvider(
     @Bean
     fun awsCredentialsProvider(): AWSCredentialsProvider {
         val credentials = BasicAWSCredentials(accessKey, secretKey)
-
         return AWSStaticCredentialsProvider(credentials)
     }
 }

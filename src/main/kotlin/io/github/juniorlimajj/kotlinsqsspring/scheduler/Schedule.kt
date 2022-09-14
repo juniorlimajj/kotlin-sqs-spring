@@ -13,7 +13,6 @@ class Schedule {
     private val logger = LoggerFactory.getLogger(javaClass)
 
     @Scheduled(fixedDelay = 1000)
-    //@Scheduled(cron = "0 0 12 \\* \\* \\*", zone = "America/Sao_Paulo")
     fun receiveMessageSync() {
         logger.info("\nScheduled: ${LocalDateTime.now()}")
     }
