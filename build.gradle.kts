@@ -26,6 +26,8 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-test") {
 		exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
 	}
+	testImplementation("org.mockito:mockito-core:5.3.1")
+	testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.2")
 }
 
 dependencyManagement {
