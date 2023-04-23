@@ -7,9 +7,9 @@ import org.springframework.stereotype.Service
 @Service
 class QueueListener {
 
-    private val logger = LoggerFactory.getLogger(javaClass)
+    var logger = LoggerFactory.getLogger(javaClass)
 
-    @SqsListener(value = ["ktest"])
+    @SqsListener(value = ["test-queue"])
     fun listener(message: String) {
         logger.info("\nReceived message <> SqsListener: $message")
     }
